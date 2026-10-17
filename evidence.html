@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8">
+<title>AstrBot #10388 — measured service evidence</title>
+<style>
+body { max-width: 1120px; margin: 32px auto; padding: 0 24px; color: #17202b;
+  font: 16px/1.5 system-ui, sans-serif; background: white; }
+h1 { font-size: 26px; margin-bottom: 10px; } p { margin: 6px 0; }
+.boundary { padding: 12px 16px; background: #eef4fb; border-left: 4px solid #2962a6; }
+table { border-collapse: collapse; width: 100%; margin: 22px 0; font-size: 15px; }
+th, td { border: 1px solid #cbd3de; padding: 10px 14px; text-align: left; }
+thead { background: #edf1f5; } tbody th { width: 38%; font-weight: 500; }
+td { font-family: ui-monospace, monospace; }
+.status { display: flex; gap: 24px; margin: 16px 0; }
+.status p { padding: 10px 18px; border: 1px solid #cbd3de; flex: 1; }
+.images { display: flex; gap: 24px; } figure { margin: 0; width: 50%; }
+img { width: 100%; height: auto; } figcaption { font-size: 13px; color: #4b5563; }
+.source { font-size: 12px; color: #4b5563; } code { font-family: ui-monospace, monospace; }
+</style>
+<h1>AstrBot #10388 — URL return contract</h1>
+<div class="boundary"><strong>Measured service-level report — not a product UI.</strong><br>
+Real loopback HTTP failure → real Pillow fallback. Downloads use the production
+ASGI file router and services. No live IM platform or model was exercised.</div>
+<div class="status"><p>Before: contract checks passed? <strong>False</strong></p>
+<p>After: contract checks passed? <strong>True</strong></p></div>
+<table><thead><tr><th>Observed case</th><th>Before</th><th>After</th></tr></thead>
+<tbody><tr><th>URL requested, valid callback base</th><td>filesystem_path</td><td>http_url</td></tr>
+<tr><th>First / repeated file download</th><td>No URL returned</td><td>200 / 200</td></tr>
+<tr><th>File download after controlled expiry</th><td>No URL returned</td><td>404</td></tr>
+<tr><th>URL requested, no callback base</th><td>filesystem_path</td><td>actionable_error</td></tr>
+<tr><th>Explicit local-path request</th><td>JPEG · [800, 232]</td><td>JPEG · [800, 232]</td></tr>
+<tr><th>Direct lower-level renderer</th><td>filesystem_path</td><td>filesystem_path</td></tr>
+<tr><th>Successful remote rendering</th><td>HTTP 200 · extra tokens: 0</td><td>HTTP 200 · extra tokens: 0</td></tr></tbody></table>
+<p>Rendering is unchanged; the defect is the returned location and whether a recipient can fetch it.</p>
+<div class="images"><figure><img src="before-rendered.jpg"><figcaption>Actual baseline local renderer output</figcaption></figure>
+<figure><img src="after-rendered.jpg"><figcaption>Actual corrected local output, fetched through the file route</figcaption></figure></div>
+<div class="source"><p>Before: <code>de898afe7588e1f153beec06e24f03f6ddeae2e4</code></p><p>After: <code>4c4ff5078064242db4f684254dbdad7ba634422a</code></p>
+<p><a href="before.json">Measured before JSON</a> · <a href="after.json">Measured after JSON</a>.
+Local filesystem paths are redacted in the JSON summary; file bytes and status assertions are measured.</p></div>
+</html>

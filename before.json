@@ -1,0 +1,78 @@
+{
+  "boundary": "Real loopback renderer HTTP; real local Pillow render; production ASGI file router/services; not full dashboard/IM",
+  "source_commit": "de898afe7588e1f153beec06e24f03f6ddeae2e4",
+  "source_file_sha256": "df31faedb1978e9c07f5d1e78eb91dee0232c8625ec12aeb667ab146a98b8f0e",
+  "results": {
+    "url_requested_with_callback": {
+      "actual_kind": "filesystem_path",
+      "value": "io_temp_img_1792201314_3f30a356.jpg",
+      "filesystem_path_redacted": true
+    },
+    "file_route": {
+      "not_attempted": "The helper returned a path, not a URL"
+    },
+    "url_requested_without_callback": {
+      "actual_kind": "filesystem_path",
+      "value": "io_temp_img_1792201314_dce3c289.jpg",
+      "filesystem_path_redacted": true
+    },
+    "path_requested": {
+      "actual_kind": "filesystem_path",
+      "exists": true,
+      "format": "JPEG",
+      "size": [
+        800,
+        232
+      ]
+    },
+    "lower_level_renderer": {
+      "actual_kind": "filesystem_path",
+      "exists": true,
+      "registered_tokens": 0
+    },
+    "remote_success": {
+      "actual_kind": "http_url",
+      "get_status": 200,
+      "content_matches": true,
+      "extra_tokens": 0
+    }
+  },
+  "renderer_probes": [
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": false,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": true
+    }
+  ],
+  "rendered_image": {
+    "format": "JPEG",
+    "size": [
+      800,
+      232
+    ]
+  },
+  "checks": {
+    "local_url_request_returns_url": false,
+    "local_url_without_base_fails_clearly": false,
+    "explicit_path_still_works": true,
+    "lower_level_path_semantics_unchanged": true,
+    "remote_url_success_unchanged": true,
+    "repeated_download_and_expiry": false
+  },
+  "all_checks_passed": false
+}

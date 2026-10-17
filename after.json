@@ -1,0 +1,84 @@
+{
+  "boundary": "Real loopback renderer HTTP; real local Pillow render; production ASGI file router/services; not full dashboard/IM",
+  "source_commit": "4c4ff5078064242db4f684254dbdad7ba634422a",
+  "source_file_sha256": "b87d4467eebe3aa5c84488631a722ff05234fc8a90f9aaf48becda9eebf343cc",
+  "results": {
+    "url_requested_with_callback": {
+      "actual_kind": "http_url",
+      "value": "http://fixture.test/api/file/de54e7fa-4739-492b-9e64-b9ec2183fbbd",
+      "filesystem_path_redacted": false
+    },
+    "file_route": {
+      "first_status": 200,
+      "second_status": 200,
+      "expired_status": 404,
+      "expiry_method": "Stored expiry moved into the past; not a five-minute wall-clock wait",
+      "same_bytes": true,
+      "content_type": "image/jpeg",
+      "single_use": false
+    },
+    "url_requested_without_callback": {
+      "actual_kind": "actionable_error",
+      "exception": "RuntimeError",
+      "message": "Local text_to_image output requires a valid HTTP(S) callback_api_base to return a URL; configure it or use return_url=False."
+    },
+    "path_requested": {
+      "actual_kind": "filesystem_path",
+      "exists": true,
+      "format": "JPEG",
+      "size": [
+        800,
+        232
+      ]
+    },
+    "lower_level_renderer": {
+      "actual_kind": "filesystem_path",
+      "exists": true,
+      "registered_tokens": 0
+    },
+    "remote_success": {
+      "actual_kind": "http_url",
+      "get_status": 200,
+      "content_matches": true,
+      "extra_tokens": 0
+    }
+  },
+  "renderer_probes": [
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": false,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": true
+    }
+  ],
+  "rendered_image": {
+    "format": "JPEG",
+    "size": [
+      800,
+      232
+    ]
+  },
+  "checks": {
+    "local_url_request_returns_url": true,
+    "local_url_without_base_fails_clearly": true,
+    "explicit_path_still_works": true,
+    "lower_level_path_semantics_unchanged": true,
+    "remote_url_success_unchanged": true,
+    "repeated_download_and_expiry": true
+  },
+  "all_checks_passed": true
+}
