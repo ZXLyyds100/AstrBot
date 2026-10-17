@@ -11,5 +11,11 @@
     "description": "Another field",
     "default": [],
     "file_types": ["png"]
+  },
+  "aliases": {
+    "type": "file",
+    "description": "Supported image extension aliases",
+    "default": [],
+    "file_types": ["jpe", "jfif", "dib", "apng"]
   }
 }

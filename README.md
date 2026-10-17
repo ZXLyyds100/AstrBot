@@ -3,7 +3,7 @@
 Issue: https://github.com/AstrBotDevs/AstrBot/issues/10595
 
 Product base: `de898afe7588e1f153beec06e24f03f6ddeae2e4`
-Tested product commit: `cd8705fcd97d17c1479504ed2c99d920d566f9ff`
+Tested product commit: `e80a91ee5969c1b068905a981989d9d315424d02`
 
 The images are unedited browser screenshots of the actual AstrBot dashboard.
 The recording is actual browser interaction, not a mockup or a generated UI.
@@ -29,14 +29,15 @@ production build, the same isolated data root, and the same sample files.
 ## Verification
 
 - Unmodified baseline: **4001 passed, 4 skipped**.
-- Final full Python suite: **4032 passed, 4 skipped**, using
+- Final full Python suite: **4035 passed, 4 skipped**, using
   `bash scripts/run_pytests_ci.sh ./tests`.
-- Added **31 API regression cases** in the existing dashboard test module:
+- Added **34 API regression cases** in the existing dashboard test module:
   JWT and plugin-scope authentication; incorrect scope and anonymous rejection;
   file-field/path isolation; symlink files, directories, field-directory aliases
   and loops; missing/corrupt/unsupported images; byte/pixel/decompression limits;
   supported raster formats; EXIF orientation and metadata removal; first
-  animation frame; original-file preservation.
+  animation frame; original-file preservation; DIB decoding; storage failures
+  reported as 503 without exposing private paths.
 - Existing dashboard Node tests: **66 passed**.
 - Python full-repository Ruff format/check: passed.
 - Actual commit hooks on the changed files: passed, without skipping hooks.
@@ -44,13 +45,37 @@ production build, the same isolated data root, and the same sample files.
   build: passed. Final build uses Node **24.13.0**, pnpm **10.28.2**, matching CI.
 - Chinese/English docs and generated scope references updated; VitePress
   production build: passed.
-- **21 real-browser assertions passed**, including same-name overwrite refresh,
+- **31 real-browser assertions passed** (21 original checks plus 10 review
+  regression checks), including same-name overwrite refresh,
   keyboard operation, missing/corrupt/non-image behavior, unconfigured-file
   preview/add/delete, mobile bounds, field isolation, repeat open/close,
   cancellation during delayed real HTTP requests, no late object URLs and no
-  credentials in image URLs.
+  credentials in image URLs. Added checks cover actual `.jfif`, `.jpe`, `.dib`,
+  `.apng` files and controlled 500/network/415/wrong-MIME fault injection.
 - Lifecycle instrumentation in the final browser run:
-  **25 object URLs created, 25 revoked, 0 left live**.
+  **29 object URLs created, 29 revoked, 0 left live**.
+
+## Review regressions
+
+The upstream Sourcery automated review identified silent unexpected errors and
+missing extension aliases. Both were addressed in the tested follow-up commit.
+Warnings contain only a status/category, not Axios request objects or credentials.
+Expected unsupported/missing/oversized images and cancelled requests remain quiet.
+Storage-read errors are distinguished from decoder errors by a documented 503.
+
+This supplemental before/after isolates the frontend correction: the pre-review
+frontend at `cd8705f` shows no thumbnails for four real raster aliases; the
+corrected frontend calls the real authenticated preview endpoint and decodes all
+four. The same isolated fixture and running preview service are used.
+
+| Pre-review frontend | Corrected frontend |
+| --- | --- |
+| ![Alias files without previews](review-before-aliases.png) | ![All four aliases previewed](review-after-aliases.png) |
+
+With controlled HTTP 500 injection the old frontend emits no preview warning.
+The corrected frontend emits sanitized warnings for 500/network/wrong-MIME
+responses and no warning for the expected 415 case. These are fault-injection
+checks, not a claim that a real deployment/storage outage was exercised.
 
 The repository-wide `pre-commit run --all-files` also rewrites two unrelated
 baseline files (`log_service.py` and `test_lark_private_chat_fallback.py`) through
@@ -81,10 +106,12 @@ The preparation script creates loopback-only dashboard configuration and synthet
 files, and overwrites configuration only inside the explicitly supplied root.
 Open **Plugins → Installed → Image preview acceptance fixture → gear icon →
 Manage Files**. The script contains local-only test login credentials.
+For the extension-alias regression, run `fixture/prepare-review.py` with the same
+root and open **Manage Files** for **Supported image extension aliases**.
 
 This evidence branch is separate from the feature branch, so the screenshots,
 recording, fixture plugin, and this report are not part of the product PR diff.
 
 Disclosure: investigation, implementation, tests, self-review and this evidence
-were produced with OpenAI Codex assistance. No independent human review,
-maintainer approval, or successful upstream CI is implied.
+were produced with OpenAI Codex assistance. Sourcery's separate automated review
+is not a human review or maintainer approval; upstream CI status is separate.
