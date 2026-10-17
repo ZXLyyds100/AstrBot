@@ -27,13 +27,14 @@ ASGI file router and services. No live IM platform or model was exercised.</div>
 <tr><th>First / repeated file download</th><td>No URL returned</td><td>200 / 200</td></tr>
 <tr><th>File download after controlled expiry</th><td>No URL returned</td><td>404</td></tr>
 <tr><th>URL requested, no callback base</th><td>filesystem_path</td><td>actionable_error</td></tr>
+<tr><th>Empty query / fragment delimiters</th><td>0 / 6 rejected without tokens</td><td>6 / 6 rejected without tokens</td></tr>
 <tr><th>Explicit local-path request</th><td>JPEG · [800, 232]</td><td>JPEG · [800, 232]</td></tr>
 <tr><th>Direct lower-level renderer</th><td>filesystem_path</td><td>filesystem_path</td></tr>
 <tr><th>Successful remote rendering</th><td>HTTP 200 · extra tokens: 0</td><td>HTTP 200 · extra tokens: 0</td></tr></tbody></table>
 <p>Rendering is unchanged; the defect is the returned location and whether a recipient can fetch it.</p>
 <div class="images"><figure><img src="before-rendered.jpg"><figcaption>Actual baseline local renderer output</figcaption></figure>
 <figure><img src="after-rendered.jpg"><figcaption>Actual corrected local output, fetched through the file route</figcaption></figure></div>
-<div class="source"><p>Before: <code>de898afe7588e1f153beec06e24f03f6ddeae2e4</code></p><p>After: <code>4c4ff5078064242db4f684254dbdad7ba634422a</code></p>
+<div class="source"><p>Before: <code>de898afe7588e1f153beec06e24f03f6ddeae2e4</code></p><p>After: <code>1874e38925bbaacac84540860fe599533806bbb1</code></p>
 <p><a href="before.json">Measured before JSON</a> · <a href="after.json">Measured after JSON</a>.
 Local filesystem paths are redacted in the JSON summary; file bytes and status assertions are measured.</p></div>
 </html>

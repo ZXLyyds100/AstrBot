@@ -124,6 +124,30 @@ async def main():
                 "exception": type(error).__name__,
                 "message": str(error),
             }
+        invalid_bases = []
+        for suffix in ("?", "#", "?#", "/proxy/?", "/proxy/#", "/proxy/?#"):
+            config["callback_api_base"] = f"http://fixture.test{suffix}"
+            tokens_before = len(file_token_service.staged_files)
+            try:
+                invalid_result = await star.text_to_image(text, return_url=True)
+                observation = {
+                    "actual_kind": "http_url"
+                    if urlsplit(invalid_result).scheme in {"http", "https"}
+                    else "filesystem_path",
+                }
+            except RuntimeError as error:
+                observation = {
+                    "actual_kind": "actionable_error",
+                    "exception": type(error).__name__,
+                    "message": str(error),
+                }
+            invalid_bases.append({
+                "synthetic_base": config["callback_api_base"],
+                **observation,
+                "extra_tokens": len(file_token_service.staged_files) - tokens_before,
+            })
+        config.pop("callback_api_base")
+        results["invalid_callback_delimiters"] = invalid_bases
         result = await star.text_to_image(text, return_url=False)
         with Image.open(result) as image:
             results["path_requested"] = {
@@ -153,6 +177,10 @@ async def main():
     checks = {
         "local_url_request_returns_url": results["url_requested_with_callback"]["actual_kind"] == "http_url",
         "local_url_without_base_fails_clearly": results["url_requested_without_callback"]["actual_kind"] == "actionable_error",
+        "empty_query_or_fragment_rejected_without_tokens": all(
+            case["actual_kind"] == "actionable_error" and case["extra_tokens"] == 0
+            for case in results["invalid_callback_delimiters"]
+        ),
         "explicit_path_still_works": results["path_requested"]["exists"],
         "lower_level_path_semantics_unchanged": results["lower_level_renderer"]["exists"],
         "remote_url_success_unchanged": results["remote_success"]["content_matches"] and results["remote_success"]["extra_tokens"] == 0,

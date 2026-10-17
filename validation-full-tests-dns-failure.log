@@ -1,0 +1,789 @@
+[ci] syncing dependencies with uv
+Resolved 168 packages in 6ms
+Checked 162 packages in 4ms
+[ci] running tests: ./tests
+============================= test session starts ==============================
+platform darwin -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388
+configfile: pyproject.toml
+plugins: cov-7.1.0, asyncio-1.4.0, anyio-4.15.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 4035 items
+
+tests/agent/test_context_manager.py .................................... [  0%]
+.................                                                        [  1%]
+tests/agent/test_token_counter.py ..............                         [  1%]
+tests/agent/test_truncator.py ...................................        [  2%]
+tests/test_agent_runner_media_resolver.py ..                             [  2%]
+tests/test_anthropic_kimi_code_provider.py ............................. [  3%]
+...                                                                      [  3%]
+tests/test_anthropic_source.py ...........................               [  4%]
+tests/test_api_key_open_api.py ..............                            [  4%]
+tests/test_astr_agent_run_util.py ...                                    [  4%]
+tests/test_backup.py ................................................... [  5%]
+.........................                                                [  6%]
+tests/test_bailian_rerank_source.py ...........                          [  6%]
+tests/test_builtin_office_skills.py ....                                 [  6%]
+tests/test_builtin_pdf_skill.py ...                                      [  6%]
+tests/test_builtin_skill_creator.py .                                    [  6%]
+tests/test_chat_route.py .............                                   [  7%]
+tests/test_cli_init.py ...                                               [  7%]
+tests/test_cli_password.py ...                                           [  7%]
+tests/test_cli_plugin.py .......                                         [  7%]
+tests/test_cli_run.py .                                                  [  7%]
+tests/test_command_filter.py ..                                          [  7%]
+tests/test_computer_config.py .......................................... [  8%]
+........................................................................ [ 10%]
+.                                                                        [ 10%]
+tests/test_computer_fs_tools.py ........................................ [ 11%]
+..                                                                       [ 11%]
+tests/test_computer_skill_sync.py ......                                 [ 11%]
+tests/test_computer_tool_permissions.py ................................ [ 12%]
+....................................................                     [ 13%]
+tests/test_content_safety_check.py .....                                 [ 13%]
+tests/test_conversation_checkpoint.py ................                   [ 14%]
+tests/test_conversation_commands.py ...                                  [ 14%]
+tests/test_conversation_list.py .....                                    [ 14%]
+tests/test_dashboard.py ................................................ [ 15%]
+........................................                                 [ 16%]
+tests/test_dashscope_embedding_source.py ..................              [ 17%]
+tests/test_deerflow_agent_runner.py ...                                  [ 17%]
+tests/test_deerflow_api_client.py .                                      [ 17%]
+tests/test_desktop_runtime.py ....                                       [ 17%]
+tests/test_dingtalk_adapter.py ...........                               [ 17%]
+tests/test_dingtalk_app_registration.py ...                              [ 17%]
+tests/test_discord_adapter.py ........................................   [ 18%]
+tests/test_discord_command_sync.py .                                     [ 18%]
+tests/test_epub_parser.py .....                                          [ 18%]
+tests/test_fastapi_v1_dashboard.py ..................................... [ 19%]
+........................................................................ [ 21%]
+..................................                                       [ 22%]
+tests/test_gemini_source.py ..............                               [ 22%]
+tests/test_httpx_socks_dependency.py .....................               [ 23%]
+tests/test_kb_import.py ......                                           [ 23%]
+tests/test_kb_rate_limiter.py ....                                       [ 23%]
+tests/test_kook/test_kook_client.py ......                               [ 23%]
+tests/test_kook/test_kook_event.py ............                          [ 23%]
+tests/test_kook/test_kook_types.py ....................                  [ 24%]
+tests/test_lark_app_registration.py ...                                  [ 24%]
+tests/test_lark_group_info.py ...                                        [ 24%]
+tests/test_lark_post_formatting.py ....................                  [ 24%]
+tests/test_lark_private_chat_fallback.py ............                    [ 25%]
+tests/test_lark_sender_name.py ...                                       [ 25%]
+tests/test_line_adapter.py .......                                       [ 25%]
+tests/test_local_filesystem_component.py .........                       [ 25%]
+tests/test_local_sandbox_access.py ........FF..ss......                  [ 26%]
+tests/test_local_shell_component.py .....................s.............. [ 27%]
+..........                                                               [ 27%]
+tests/test_main.py ..................                                    [ 27%]
+tests/test_mattermost_adapter.py .......                                 [ 27%]
+tests/test_media_utils.py .............................................. [ 29%]
+....................................                                     [ 29%]
+tests/test_mimo_api_sources.py ...................                       [ 30%]
+tests/test_mirarouter_source.py .                                        [ 30%]
+tests/test_model_image_preparation.py .................................. [ 31%]
+.....................................                                    [ 32%]
+tests/test_neo_skill_sync.py ..                                          [ 32%]
+tests/test_neo_skill_tools.py .                                          [ 32%]
+tests/test_openai_embedding_source.py .............                      [ 32%]
+tests/test_openai_responses_source.py ........                           [ 32%]
+tests/test_openai_source.py ............................................ [ 33%]
+......................                                                   [ 34%]
+tests/test_openai_thinking_tags.py .............                         [ 34%]
+tests/test_pip_helper_modules.py ......................                  [ 35%]
+tests/test_pip_installer.py ............................................ [ 36%]
+................................................                         [ 37%]
+tests/test_platform_audio_media_resolver.py .....                        [ 37%]
+tests/test_platform_image_format_preservation.py .....                   [ 37%]
+tests/test_plugin_manager.py ........................................... [ 38%]
+........................................................................ [ 40%]
+..........                                                               [ 40%]
+tests/test_preprocess_stage.py .............................             [ 41%]
+tests/test_process_stage_images.py ..................................... [ 42%]
+........................................................................ [ 44%]
+........................................................................ [ 46%]
+.......                                                                  [ 46%]
+tests/test_profile_aware_tools.py ..................                     [ 46%]
+tests/test_provider_user_agent.py ...................................... [ 47%]
+......s                                                                  [ 47%]
+tests/test_qqofficial_chunked_upload.py ....                             [ 48%]
+tests/test_qqofficial_config_template.py .                               [ 48%]
+tests/test_qqofficial_group_message_create.py .......................... [ 48%]
+...........                                                              [ 48%]
+tests/test_qqofficial_login_registration.py .....                        [ 49%]
+tests/test_qqofficial_stream_buffer_copy.py ...........                  [ 49%]
+tests/test_qqofficial_webhook_signature.py .....                         [ 49%]
+tests/test_quoted_message_parser.py ............................         [ 50%]
+tests/test_rate_limit_stage.py ..                                        [ 50%]
+tests/test_repository.py ...........                                     [ 50%]
+tests/test_request_retry.py .                                            [ 50%]
+tests/test_runtime_env.py ...                                            [ 50%]
+tests/test_satori_group_info.py .....                                    [ 50%]
+tests/test_security_fixes.py ......                                      [ 50%]
+tests/test_shipyard_neo_booter.py ............                           [ 51%]
+tests/test_skill_manager_sandbox_cache.py ...                            [ 51%]
+tests/test_skill_metadata_enrichment.py ................................ [ 52%]
+.....                                                                    [ 52%]
+tests/test_slack_file_upload.py ........................................ [ 53%]
+.....................                                                    [ 53%]
+tests/test_slack_group_info.py ....                                      [ 53%]
+tests/test_slack_rich_text.py ........                                   [ 53%]
+tests/test_slack_tts.py ............                                     [ 54%]
+tests/test_smoke.py ......                                               [ 54%]
+tests/test_ssycloud_source.py ....                                       [ 54%]
+tests/test_storage_cleaner.py ...                                        [ 54%]
+tests/test_t2i_local_strategy.py ...                                     [ 54%]
+tests/test_t2i_template_manager.py .....                                 [ 54%]
+tests/test_telegram_adapter.py ......................................... [ 55%]
+............                                                             [ 56%]
+tests/test_temp_dir_cleaner.py ...                                       [ 56%]
+tests/test_toml_parser.py ..........                                     [ 56%]
+tests/test_tool_loop_agent_runner.py ................................... [ 57%]
+.........................                                                [ 57%]
+tests/test_umo_alias.py ...........                                      [ 58%]
+tests/test_updater_socks.py ............................................ [ 59%]
+...............                                                          [ 59%]
+tests/test_upload_utils.py ....                                          [ 59%]
+tests/test_vllm_rerank_source.py ..........                              [ 59%]
+tests/test_webchat_queue_lifecycle.py .                                  [ 60%]
+tests/test_webhook_server_response.py ...                                [ 60%]
+tests/test_wecomai_group_info.py .                                       [ 60%]
+tests/test_wecomai_long_connection.py .                                  [ 60%]
+tests/test_weixin_oc_adapter_timeout_floor.py .......                    [ 60%]
+tests/test_weixin_oc_config_metadata.py ..                               [ 60%]
+tests/test_weixin_oc_login_registration.py ...                           [ 60%]
+tests/test_weixin_oc_state_persistence.py ...                            [ 60%]
+tests/test_whisper_api_source.py .                                       [ 60%]
+tests/test_xinference_rerank_source.py ..                                [ 60%]
+tests/unit/test_active_event_registry.py ........                        [ 60%]
+tests/unit/test_agent_runner_config.py ................................. [ 61%]
+.......                                                                  [ 61%]
+tests/unit/test_aiocqhttp_files.py ....                                  [ 61%]
+tests/unit/test_aiocqhttp_group_info.py .....                            [ 61%]
+tests/unit/test_aiocqhttp_poke.py ....                                   [ 62%]
+tests/unit/test_aiocqhttp_reply.py ......                                [ 62%]
+tests/unit/test_api_logger.py .........                                  [ 62%]
+tests/unit/test_astr_agent_tool_exec.py ................................ [ 63%]
+......................                                                   [ 63%]
+tests/unit/test_astr_main_agent.py ..................................... [ 64%]
+........................................................................ [ 66%]
+.....................................                                    [ 67%]
+tests/unit/test_astr_message_event.py .................................. [ 68%]
+..............................................                           [ 69%]
+tests/unit/test_astrbot_config_manager.py ....                           [ 69%]
+tests/unit/test_astrbot_message.py ........................              [ 70%]
+tests/unit/test_async_generator.py .............                         [ 70%]
+tests/unit/test_azure_tts_concurrency.py ......                          [ 70%]
+tests/unit/test_body_limit.py ........                                   [ 70%]
+tests/unit/test_chat_attachment_unique_names.py .....                    [ 70%]
+tests/unit/test_chat_chunked_upload.py ......                            [ 71%]
+tests/unit/test_chat_history_pagination.py .......                       [ 71%]
+tests/unit/test_chat_session_pagination.py .                             [ 71%]
+tests/unit/test_chatui_project_service.py .......................        [ 71%]
+tests/unit/test_cli_plugin_utils.py .....                                [ 71%]
+tests/unit/test_command_group_filter.py .............                    [ 72%]
+tests/unit/test_command_permissions.py ................................. [ 73%]
+.........................                                                [ 73%]
+tests/unit/test_command_plugin_activation.py ..                          [ 73%]
+tests/unit/test_computer.py ............................................ [ 74%]
+                                                                         [ 74%]
+tests/unit/test_config.py .............................................. [ 75%]
+.........................                                                [ 76%]
+tests/unit/test_config_profile_service.py ..                             [ 76%]
+tests/unit/test_conversation_restart.py ................................ [ 77%]
+............................................................             [ 78%]
+tests/unit/test_core_lifecycle.py ..........................             [ 79%]
+tests/unit/test_cron_context_compression.py ...............              [ 79%]
+tests/unit/test_cron_edit_validation.py ......                           [ 80%]
+tests/unit/test_cron_events.py ..............                            [ 80%]
+tests/unit/test_cron_manager.py ........................................ [ 81%]
+........                                                                 [ 81%]
+tests/unit/test_cron_service.py .....                                    [ 81%]
+tests/unit/test_cron_tools.py .....................                      [ 82%]
+tests/unit/test_cua_computer_use.py .................................... [ 83%]
+.............................                                            [ 83%]
+tests/unit/test_dashboard_dist_resolution.py ..........                  [ 84%]
+tests/unit/test_dashboard_static_encoding.py ....                        [ 84%]
+tests/unit/test_dashboard_util.py ...                                    [ 84%]
+tests/unit/test_datetime_storage.py .................                    [ 84%]
+tests/unit/test_document_storage_fts.py ....                             [ 84%]
+tests/unit/test_event_bus.py ........................................... [ 85%]
+............                                                             [ 86%]
+tests/unit/test_event_loop_diagnostics.py .....                          [ 86%]
+tests/unit/test_faiss_vec_db.py .........                                [ 86%]
+tests/unit/test_file_message_component.py .                              [ 86%]
+tests/unit/test_func_tool_manager.py ................................... [ 87%]
+.........                                                                [ 87%]
+tests/unit/test_group_chat_context_wiring.py ..........                  [ 87%]
+tests/unit/test_group_message_history.py ...                             [ 87%]
+tests/unit/test_io_download_file.py ...                                  [ 88%]
+tests/unit/test_kb_document_cleanup.py ....                              [ 88%]
+tests/unit/test_kb_manager_resilience.py ....                            [ 88%]
+tests/unit/test_kb_name_uuid_lookup.py .........                         [ 88%]
+tests/unit/test_kb_upload_atomicity.py ..................                [ 88%]
+tests/unit/test_knowledge_base_service_contract.py ..............        [ 89%]
+tests/unit/test_live_chat_service.py ......                              [ 89%]
+tests/unit/test_mcp_client_schema.py ......                              [ 89%]
+tests/unit/test_message_tools.py ....................................... [ 90%]
+........................................                                 [ 91%]
+tests/unit/test_misskey_group_info.py ...                                [ 91%]
+tests/unit/test_network_utils.py ..                                      [ 91%]
+tests/unit/test_open_api_service_ws.py ....                              [ 91%]
+tests/unit/test_openapi_scope_docs.py ....                               [ 91%]
+tests/unit/test_persona_folder_deletion.py ..                            [ 91%]
+tests/unit/test_persona_mgr.py ............                              [ 92%]
+tests/unit/test_provider_stats.py .                                      [ 92%]
+tests/unit/test_python_tools.py ................                         [ 92%]
+tests/unit/test_rank_fusion.py ..........                                [ 92%]
+tests/unit/test_session_lock.py ......................                   [ 93%]
+tests/unit/test_session_management_service.py ..                         [ 93%]
+tests/unit/test_shared_preferences.py ..........                         [ 93%]
+tests/unit/test_sparse_retriever.py ....                                 [ 93%]
+tests/unit/test_star_base.py ........................................... [ 94%]
+...                                                                      [ 94%]
+tests/unit/test_star_context.py ..........................               [ 95%]
+tests/unit/test_stat_service.py .......................                  [ 96%]
+tests/unit/test_subagent_orchestrator.py ......                          [ 96%]
+tests/unit/test_third_party_agent_sub_stage.py ......                    [ 96%]
+tests/unit/test_timestamp_ids.py .                                       [ 96%]
+tests/unit/test_tool_conflict_resolution.py ...............              [ 96%]
+tests/unit/test_tool_generator_lifecycle.py ......................       [ 97%]
+tests/unit/test_tool_google_schema.py ..                                 [ 97%]
+tests/unit/test_tool_permission.py ....................                  [ 97%]
+tests/unit/test_totp_utils.py ..........                                 [ 98%]
+tests/unit/test_upload_filename_sanitization.py .....                    [ 98%]
+tests/unit/test_waking_check_api_key_admin.py ...                        [ 98%]
+tests/unit/test_waking_check_umo_alias.py ......                         [ 98%]
+tests/unit/test_web_search_tools.py .................................... [ 99%]
+..........                                                               [ 99%]
+tests/unit/test_webchat_follow_up_status.py ..                           [ 99%]
+tests/unit/test_webchat_message_parts.py ...                             [ 99%]
+tests/unit/test_webchat_request_flags.py ...                             [ 99%]
+tests/unit/test_webchat_upload_image_format.py ......                    [100%]
+
+=================================== FAILURES ===================================
+_______ test_local_sandbox_resolves_dns_with_network_enabled[workspace] ________
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x17fb25c40>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-3...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+>               result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+
+astrbot/core/computer/process_sandbox/unix.py:141: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:550: in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2141: in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: -9 args: ['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/pri...>
+timeout = 19.999978208972607
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -> initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining <= 0:
+>                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn0', '-D', 'EXECUTABLE_0=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-D', 'PYTHON_PREFIX=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv', '-D', 'PYTHON_BASE_PREFIX=/Library/Frameworks/Python.framework/Versions/3.12', '-p', '\n(version 1)\n(deny default)\n(deny mach-priv-host-port)\n(import "system.sb")\n\n(allow process-fork)\n(allow process-exec)\n(allow process-info* (target self))\n(deny process-exec\n    (literal "/usr/bin/open")\n    (literal "/usr/bin/osascript"))\n(deny appleevent-send)\n(deny mach-lookup\n    (global-name "com.apple.coreservices.launchservicesd")\n    (global-name "com.apple.lsd.mapdb")\n    (global-name "com.apple.lsd.modifydb")\n    (global-name "com.apple.lsd.open")\n    (global-name "com.apple.lsd.xpc"))\n\n(allow file-read-metadata file-test-existence)\n(allow file-read* file-test-existence\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-map-executable\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-write*\n    (subpath (param "WORKSPACE")))\n\n(deny file-read*\n    (literal "/private/etc/master.passwd")\n    (literal "/private/etc/passwd"))\n(allow network*)\n\n(deny file-write* (subpath (param "PYTHON_PREFIX")) (subpath (param "PYTHON_BASE_PREFIX")))\n', '/usr/bin/env', '-i', 'PATH=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin:/usr/bin:/bin', 'HOME=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn0', 'TMPDIR=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn0', 'LANG=C.UTF-8', '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-I', '-S', '-c', '\nimport os\nimport resource\nimport sys\n\nlimits = [\n    (resource.RLIMIT_CPU, 300),\n    (resource.RLIMIT_FSIZE, 104857600),\n    (resource.RLIMIT_NOFILE, 256),\n    (resource.RLIMIT_CORE, 0),\n]\nif sys.platform.startswith("linux"):\n    # macOS RLIMIT_NPROC counts every process owned by the host user, and its\n    # Python process starts above this virtual-address limit.\n    limits.extend(\n        (\n            (resource.RLIMIT_NPROC, 256),\n            (resource.RLIMIT_AS, 1073741824),\n        )\n    )\nfor kind, requested in limits:\n    _, hard = resource.getrlimit(kind)\n    value = requested if hard == resource.RLIM_INFINITY else min(requested, hard)\n    resource.setrlimit(kind, (value, value))\nos.execvpe(sys.argv[1], sys.argv[1:], os.environ)\n', '/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python', '-c', "import socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]' timed out after 19.999978208972607 seconds
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2045: TimeoutExpired
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn0')
+filesystem_scope = 'workspace'
+
+    @requires_local_sandbox
+    @pytest.mark.parametrize("filesystem_scope", ["workspace", "host"])
+    def test_local_sandbox_resolves_dns_with_network_enabled(tmp_path, filesystem_scope):
+        """Resolve a public hostname through the operating system's real DNS resolver."""
+>       result = create_process_sandbox().run(
+            [
+                sys.executable,
+                "-c",
+                "import socket; "
+                "assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); "
+                "print('DNS resolution succeeded')",
+            ],
+            SandboxSpec(
+                workspace=tmp_path,
+                allow_network=True,
+                filesystem_scope=filesystem_scope,
+            ),
+            timeout=20,
+        )
+
+tests/test_local_sandbox_access.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x17fb25c40>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-3...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+                result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+            except subprocess.TimeoutExpired as exc:
+>               raise SandboxTimeoutError(
+                    f"Sandbox command timed out after {timeout} seconds."
+                ) from exc
+E               astrbot.core.computer.process_sandbox.base.SandboxTimeoutError: Sandbox command timed out after 20 seconds.
+
+astrbot/core/computer/process_sandbox/unix.py:150: SandboxTimeoutError
+__________ test_local_sandbox_resolves_dns_with_network_enabled[host] __________
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x17fb24200>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-3...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+>               result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+
+astrbot/core/computer/process_sandbox/unix.py:141: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:550: in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2141: in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: -9 args: ['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/pri...>
+timeout = 19.999947541975416
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -> initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining <= 0:
+>                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn1', '-D', 'EXECUTABLE_0=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-D', 'PYTHON_PREFIX=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv', '-D', 'PYTHON_BASE_PREFIX=/Library/Frameworks/Python.framework/Versions/3.12', '-p', '\n(version 1)\n(deny default)\n(deny mach-priv-host-port)\n(import "system.sb")\n\n(allow file-read* file-write* file-test-existence file-read-metadata file-map-executable)\n\n(allow process-fork)\n(allow process-exec)\n(allow process-info* (target self))\n(deny process-exec\n    (literal "/usr/bin/open")\n    (literal "/usr/bin/osascript"))\n(deny appleevent-send)\n(deny mach-lookup\n    (global-name "com.apple.coreservices.launchservicesd")\n    (global-name "com.apple.lsd.mapdb")\n    (global-name "com.apple.lsd.modifydb")\n    (global-name "com.apple.lsd.open")\n    (global-name "com.apple.lsd.xpc"))\n\n(allow file-read-metadata file-test-existence)\n(allow file-read* file-test-existence\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-map-executable\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-write*\n    (subpath (param "WORKSPACE")))\n\n(allow network*)\n', '/usr/bin/env', '-i', 'PATH=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin:/usr/bin:/bin', 'HOME=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn1', 'TMPDIR=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn1', 'LANG=C.UTF-8', '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-I', '-S', '-c', '\nimport os\nimport resource\nimport sys\n\nlimits = [\n    (resource.RLIMIT_CPU, 300),\n    (resource.RLIMIT_FSIZE, 104857600),\n    (resource.RLIMIT_NOFILE, 256),\n    (resource.RLIMIT_CORE, 0),\n]\nif sys.platform.startswith("linux"):\n    # macOS RLIMIT_NPROC counts every process owned by the host user, and its\n    # Python process starts above this virtual-address limit.\n    limits.extend(\n        (\n            (resource.RLIMIT_NPROC, 256),\n            (resource.RLIMIT_AS, 1073741824),\n        )\n    )\nfor kind, requested in limits:\n    _, hard = resource.getrlimit(kind)\n    value = requested if hard == resource.RLIM_INFINITY else min(requested, hard)\n    resource.setrlimit(kind, (value, value))\nos.execvpe(sys.argv[1], sys.argv[1:], os.environ)\n', '/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python', '-c', "import socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]' timed out after 19.999947541975416 seconds
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2045: TimeoutExpired
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-38/test_local_sandbox_resolves_dn1')
+filesystem_scope = 'host'
+
+    @requires_local_sandbox
+    @pytest.mark.parametrize("filesystem_scope", ["workspace", "host"])
+    def test_local_sandbox_resolves_dns_with_network_enabled(tmp_path, filesystem_scope):
+        """Resolve a public hostname through the operating system's real DNS resolver."""
+>       result = create_process_sandbox().run(
+            [
+                sys.executable,
+                "-c",
+                "import socket; "
+                "assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); "
+                "print('DNS resolution succeeded')",
+            ],
+            SandboxSpec(
+                workspace=tmp_path,
+                allow_network=True,
+                filesystem_scope=filesystem_scope,
+            ),
+            timeout=20,
+        )
+
+tests/test_local_sandbox_access.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x17fb24200>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/bin/python'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-3...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+                result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+            except subprocess.TimeoutExpired as exc:
+>               raise SandboxTimeoutError(
+                    f"Sandbox command timed out after {timeout} seconds."
+                ) from exc
+E               astrbot.core.computer.process_sandbox.base.SandboxTimeoutError: Sandbox command timed out after 20 seconds.
+
+astrbot/core/computer/process_sandbox/unix.py:150: SandboxTimeoutError
+=============================== warnings summary ===============================
+astrbot/core/utils/tencent_record_helper.py:4
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/utils/tencent_record_helper.py:4: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    import audioop
+
+.venv/lib/python3.12/site-packages/dashscope/__init__.py:63
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/dashscope/__init__.py:63: DeprecationWarning: The Assistants API (dashscope.assistants) is deprecated and will be removed in a future release. Please migrate to the Responses API. See https://help.aliyun.com/zh/model-studio/synchronous-call-api-reference for migration details.
+    from dashscope.assistants import Assistant, AssistantList, Assistants
+
+.venv/lib/python3.12/site-packages/lark_oapi/ws/pb/google/protobuf/internal/well_known_types.py:91
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/lark_oapi/ws/pb/google/protobuf/internal/well_known_types.py:91: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+    _EPOCH_DATETIME_NAIVE = datetime.datetime.utcfromtimestamp(0)
+
+.venv/lib/python3.12/site-packages/lark_oapi/ws/client.py:35
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/lark_oapi/ws/client.py:35: DeprecationWarning: There is no current event loop
+    loop = asyncio.get_event_loop()
+
+tests/test_anthropic_source.py: 17 warnings
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/provider/sources/anthropic_source.py:522: DeprecationWarning: Call to deprecated method get_func_desc_anthropic_style. (Use anthropic_schema() instead) -- Deprecated since version 4.0.0.
+    if tool_list := tools.get_func_desc_anthropic_style():
+
+tests/test_anthropic_source.py: 18 warnings
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/provider/sources/anthropic_source.py:637: DeprecationWarning: Call to deprecated method get_func_desc_anthropic_style. (Use anthropic_schema() instead) -- Deprecated since version 4.0.0.
+    if tool_list := tools.get_func_desc_anthropic_style():
+
+tests/test_api_key_open_api.py::test_open_send_message_with_api_key
+tests/unit/test_stat_service.py::test_get_stat_aggregates_platform_stats
+tests/unit/test_stat_service.py::test_get_stat_aggregates_platform_stats
+tests/unit/test_stat_service.py::test_get_stat_aggregates_platform_stats
+tests/unit/test_stat_service.py::test_get_stat_aggregates_platform_stats
+tests/unit/test_stat_service.py::test_get_stat_aggregates_platform_stats
+tests/unit/test_stat_service.py::test_get_stat_empty_window
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/aiosqlite/core.py:63: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+    result = function()
+
+tests/test_backup.py::TestBackupUploadLimits::test_upload_status_bound_to_owner
+tests/test_backup.py::TestBackupUploadLimits::test_upload_status_does_not_extend_lifetime
+tests/unit/test_chat_chunked_upload.py::TestChatChunkedUpload::test_upload_init_validates_input
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/dashboard/services/chunked_upload_service.py:309: RuntimeWarning: coroutine 'ChunkedUploadService._cleanup_expired_sessions' was never awaited
+    pass
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/db/sqlite.py:402: SADeprecationWarning: Type object <class 'sqlalchemy.sql.sqltypes.JSON'> does not include operator 'ilike_op' in its operator classes.  Using built-in operators (not including custom or overridden operators) outside of a type's stated operator classes is deprecated and will raise InvalidRequestError in a future release
+    col(ConversationV2.content).ilike(f"%{search_query}%"),
+
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/db/sqlite.py:403: SADeprecationWarning: Type object <class 'sqlalchemy.sql.sqltypes.JSON'> does not include operator 'ilike_op' in its operator classes.  Using built-in operators (not including custom or overridden operators) outside of a type's stated operator classes is deprecated and will raise InvalidRequestError in a future release
+    col(ConversationV2.content).ilike(f"%{escaped_search_query}%"),
+
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/db/sqlite.py:416: SADeprecationWarning: Type object <class 'sqlalchemy.sql.sqltypes.JSON'> does not include operator 'ilike_op' in its operator classes.  Using built-in operators (not including custom or overridden operators) outside of a type's stated operator classes is deprecated and will raise InvalidRequestError in a future release
+    col(ConversationV2.content).ilike(f"%{keyword_query}%"),
+
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_filtered_conversations_summary_skips_content_and_applies_filters
+tests/test_conversation_list.py::test_webchat_session_title_matches_search_and_keyword
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/db/sqlite.py:417: SADeprecationWarning: Type object <class 'sqlalchemy.sql.sqltypes.JSON'> does not include operator 'ilike_op' in its operator classes.  Using built-in operators (not including custom or overridden operators) outside of a type's stated operator classes is deprecated and will raise InvalidRequestError in a future release
+    col(ConversationV2.content).ilike(f"%{escaped_keyword_query}%"),
+
+tests/test_dashboard.py::test_dashboard_uses_bundled_dist_when_data_dist_is_stale
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/_pytest/threadexception.py:58: PytestUnhandledThreadExceptionWarning: Exception in thread Thread-60 (_connection_worker_thread)
+  
+  Traceback (most recent call last):
+    File "/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/aiosqlite/core.py", line 66, in _connection_worker_thread
+      future.get_loop().call_soon_threadsafe(set_result, future, result)
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 844, in call_soon_threadsafe
+      self._check_closed()
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+      raise RuntimeError('Event loop is closed')
+  RuntimeError: Event loop is closed
+  
+  During handling of the above exception, another exception occurred:
+  
+  Traceback (most recent call last):
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+      self.run()
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/threading.py", line 1012, in run
+      self._target(*self._args, **self._kwargs)
+    File "/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/aiosqlite/core.py", line 75, in _connection_worker_thread
+      future.get_loop().call_soon_threadsafe(set_exception, future, e)
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 844, in call_soon_threadsafe
+      self._check_closed()
+    File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 545, in _check_closed
+      raise RuntimeError('Event loop is closed')
+  RuntimeError: Event loop is closed
+  
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+    warnings.warn(pytest.PytestUnhandledThreadExceptionWarning(msg))
+
+tests/test_dashboard.py::test_batch_upload_skills_partial_success
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/httpx/_models.py:408: DeprecationWarning: Use 'content=<...>' to upload raw bytes/text content.
+    headers, stream = encode_request(
+
+tests/test_provider_user_agent.py::test_provider_sdk_sends_exactly_one_user_agent[custom_headers0-GeminiEmbeddingProvider]
+tests/test_provider_user_agent.py::test_provider_sdk_sends_exactly_one_user_agent[custom_headers0-ProviderGeminiTTSAPI]
+tests/test_provider_user_agent.py::test_provider_sdk_sends_exactly_one_user_agent[custom_headers1-GeminiEmbeddingProvider]
+tests/test_provider_user_agent.py::test_provider_sdk_sends_exactly_one_user_agent[custom_headers1-ProviderGeminiTTSAPI]
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/.venv/lib/python3.12/site-packages/google/genai/_api_client.py:1128: DeprecationWarning: Inheritance class AiohttpClientSession from ClientSession is discouraged
+    class AiohttpClientSession(aiohttp.ClientSession):  # type: ignore[misc]
+
+tests/unit/test_func_tool_manager.py::test_builtin_tool_ignores_inactivated_llm_tools
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_func_tool_manager.py:38: DeprecationWarning: Call to deprecated method put. (Use put_async() instead. Plugins: use PluginKVStoreMixin.put_kv_data().) -- Deprecated since version 4.0.0.
+    sp.put(
+
+tests/unit/test_func_tool_manager.py::test_builtin_tool_ignores_inactivated_llm_tools
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_func_tool_manager.py:49: DeprecationWarning: Call to deprecated method put. (Use put_async() instead. Plugins: use PluginKVStoreMixin.put_kv_data().) -- Deprecated since version 4.0.0.
+    sp.put("inactivated_llm_tools", [], scope="global", scope_id="global")
+
+tests/unit/test_shared_preferences.py::test_sync_put_updates_cache_and_persists_without_blocking
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:29: DeprecationWarning: Call to deprecated method put. (Use put_async() instead. Plugins: use PluginKVStoreMixin.put_kv_data().) -- Deprecated since version 4.0.0.
+    store.put("theme", "dark", scope="global", scope_id="global")
+
+tests/unit/test_shared_preferences.py::test_sync_put_updates_cache_and_persists_without_blocking
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:32: DeprecationWarning: Call to deprecated method get. (Use get_async() instead. Plugins: use PluginKVStoreMixin.get_kv_data().) -- Deprecated since version 4.0.0.
+    assert store.get("theme", scope="global", scope_id="global") == "dark"
+
+tests/unit/test_shared_preferences.py::test_sync_get_does_not_wait_for_an_exhausted_connection_pool
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:67: DeprecationWarning: Call to deprecated method get. (Use get_async() instead. Plugins: use PluginKVStoreMixin.get_kv_data().) -- Deprecated since version 4.0.0.
+    store.get(
+
+tests/unit/test_shared_preferences.py::test_sync_writes_from_worker_threads_keep_fifo_order
+tests/unit/test_shared_preferences.py::test_sync_writes_from_worker_threads_keep_fifo_order
+tests/unit/test_shared_preferences.py::test_concurrent_sync_writes_keep_submission_order
+tests/unit/test_shared_preferences.py::test_concurrent_sync_writes_keep_submission_order
+  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py:59: DeprecationWarning: Call to deprecated method put. (Use put_async() instead. Plugins: use PluginKVStoreMixin.put_kv_data().) -- Deprecated since version 4.0.0.
+    result = self.fn(*self.args, **self.kwargs)
+
+tests/unit/test_shared_preferences.py::test_sync_writes_from_worker_threads_keep_fifo_order
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:102: DeprecationWarning: Call to deprecated method get. (Use get_async() instead. Plugins: use PluginKVStoreMixin.get_kv_data().) -- Deprecated since version 4.0.0.
+    assert store.get("ordered", scope="global", scope_id="global") == "second"
+
+tests/unit/test_shared_preferences.py::test_sync_reads_fall_back_to_database_without_preload
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:188: DeprecationWarning: Call to deprecated method get. (Use get_async() instead. Plugins: use PluginKVStoreMixin.get_kv_data().) -- Deprecated since version 4.0.0.
+    assert store.get("provider", scope="umo", scope_id="session") == "provider-1"
+
+tests/unit/test_shared_preferences.py::test_sync_range_reads_historical_and_process_local_values
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:210: DeprecationWarning: Call to deprecated method put. (Use put_async() instead. Plugins: use PluginKVStoreMixin.put_kv_data().) -- Deprecated since version 4.0.0.
+    store.put(
+
+tests/unit/test_shared_preferences.py::test_sync_range_reads_historical_and_process_local_values
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:217: DeprecationWarning: Call to deprecated method range_get. (Use range_get_async() instead.) -- Deprecated since version 4.0.0.
+    preferences = store.range_get("plugin", "example")
+
+tests/unit/test_shared_preferences.py::test_sync_get_reads_persisted_value_with_exhausted_pool
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/tests/unit/test_shared_preferences.py:263: DeprecationWarning: Call to deprecated method get. (Use get_async() instead. Plugins: use PluginKVStoreMixin.get_kv_data().) -- Deprecated since version 4.0.0.
+    assert store.get(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_local_sandbox_access.py::test_local_sandbox_resolves_dns_with_network_enabled[workspace]
+FAILED tests/test_local_sandbox_access.py::test_local_sandbox_resolves_dns_with_network_enabled[host]
+====== 2 failed, 4029 passed, 4 skipped, 83 warnings in 206.30s (0:03:26) ======

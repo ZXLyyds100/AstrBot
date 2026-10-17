@@ -1,0 +1,566 @@
+[ci] syncing dependencies with uv
+Using CPython 3.12.10 interpreter at: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+Creating virtual environment at: .venv
+Resolved 168 packages in 1.56s
+   Building astrbot @ file:///Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot
+      Built astrbot @ file:///Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot
+Prepared 1 package in 1.01s
+Installed 162 packages in 987ms
+ + aiocqhttp==1.4.4
+ + aiodocker==0.27.0
+ + aiofiles==25.1.0
+ + aiohappyeyeballs==2.7.1
+ + aiohttp==3.14.5
+ + aiosignal==1.4.0
+ + aiosqlite==0.22.1
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anthropic==1.15.0
+ + anyio==4.15.1
+ + apscheduler==3.11.3
+ + argcomplete==3.7.2
+ + astrbot==4.29.0 (from file:///Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot)
+ + attrs==26.1.0
+ + beautifulsoup4==4.15.0
+ + blinker==1.9.0
+ + certifi==2026.7.22
+ + cffi==2.1.1
+ + chardet==5.1.0
+ + charset-normalizer==3.5.2
+ + click==8.5.0
+ + cobble==0.1.4
+ + colorama==0.4.6
+ + commitizen==4.19.2
+ + coverage==7.16.2
+ + cryptography==50.0.2
+ + dashscope==1.27.7
+ + decli==0.6.3
+ + defusedxml==0.7.1
+ + deprecated==1.3.1
+ + dingtalk-stream==0.24.3
+ + distro==1.9.0
+ + docstring-parser==0.18.0
+ + et-xmlfile==2.0.0
+ + faiss-cpu==1.15.1
+ + fastapi==0.143.3
+ + filelock==4.2.0
+ + filetype==1.2.0
+ + flask==3.1.3
+ + frozenlist==1.8.0
+ + google-auth==2.62.0
+ + google-genai==2.31.0
+ + greenlet==3.5.6
+ + h11==0.16.0
+ + h2==4.4.1
+ + hpack==4.2.0
+ + httpcore==1.0.9
+ + httpcore2==2.13.1
+ + httpx==0.28.1
+ + httpx-sse==0.4.3
+ + httpx2==2.13.1
+ + hypercorn==0.18.0
+ + hyperframe==6.1.0
+ + idna==3.20
+ + iniconfig==2.3.1
+ + itsdangerous==2.2.0
+ + jieba==0.42.1
+ + jinja2==3.1.6
+ + jiter==0.17.0
+ + jsonschema==4.26.0
+ + jsonschema-specifications==2025.9.1
+ + lark-oapi==1.7.5
+ + loguru==0.7.3
+ + lxml==6.1.3
+ + mammoth==1.13.0
+ + markdown-it-py==4.2.0
+ + markdownify==1.2.3
+ + markitdown-no-magika==0.1.2
+ + markupsafe==3.0.4
+ + mcp==1.30.0
+ + mdurl==0.1.2
+ + multidict==7.1.0
+ + numpy==2.5.4
+ + openai==3.33.0
+ + openpyxl==3.1.5
+ + opentelemetry-api==1.45.1
+ + optionaldict==0.1.2
+ + ormsgpack==1.13.0
+ + packaging==26.3
+ + pandas==3.0.6
+ + pillow==13.0.0
+ + pip==26.2.1
+ + pluggy==1.7.0
+ + priority==2.0.0
+ + prompt-toolkit==3.0.53
+ + propcache==0.5.4
+ + psutil==7.1.3
+ + py-cord==2.8.1
+ + pyasn1==0.6.4
+ + pyasn1-modules==0.4.2
+ + pycparser==3.11
+ + pycryptodome==4.0.0
+ + pydantic==2.14.1
+ + pydantic-core==2.50.1
+ + pydantic-settings==2.16.0
+ + pydub==0.25.1
+ + pygments==2.21.0
+ + pyjwt==2.15.1
+ + pyotp==2.10.0
+ + pypdf==6.21.0
+ + pyromark==0.10.1
+ + pysocks==1.7.1
+ + pytest==9.1.1
+ + pytest-asyncio==1.4.0
+ + pytest-cov==7.1.0
+ + python-dateutil==2.9.0.post0
+ + python-docx==1.2.0
+ + python-dotenv==1.2.4
+ + python-multipart==0.0.32
+ + python-ripgrep==0.0.8
+ + python-socks==3.1.1
+ + python-telegram-bot==22.8
+ + pyyaml==6.0.3
+ + qq-botpy==1.2.1
+ + qrcode==8.2
+ + quart==0.22.0
+ + questionary==2.1.1
+ + rank-bm25==0.2.2
+ + referencing==0.37.0
+ + reportlab==5.0.1
+ + requests==2.34.2
+ + requests-toolbelt==1.0.0
+ + rich==15.0.0
+ + rpds-py==2026.9.1
+ + ruff==0.15.22
+ + shellingham==1.5.4
+ + shipyard-neo-sdk==0.2.0
+ + shipyard-python-sdk==0.2.4
+ + silk-python==0.2.8
+ + six==1.17.0
+ + slack-sdk==3.45.0
+ + sniffio==1.3.1
+ + socksio==1.0.0
+ + soupsieve==3.0.3
+ + sqlalchemy==2.1.5
+ + sqlmodel==0.0.48
+ + sse-starlette==3.5.0
+ + starlette==1.8.0
+ + telegramify-markdown==1.4.0
+ + tenacity==9.1.4
+ + termcolor==3.3.0
+ + tomlkit==0.15.2
+ + truststore==0.10.5
+ + typer==0.27.3
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.4
+ + tzlocal==5.4.4
+ + urllib3==2.8.0
+ + uvicorn==0.54.0
+ + watchfiles==1.3.0
+ + wcwidth==0.9.2
+ + websocket-client==1.9.2
+ + websockets==15.0.1
+ + wechatpy==1.8.18
+ + werkzeug==3.1.9
+ + wrapt==2.5.1
+ + wsproto==1.3.2
+ + xinference-client==4.0.0
+ + xlrd==2.0.2
+ + xmltodict==1.0.4
+ + yarl==1.25.1
+[ci] running tests: tests/test_local_sandbox_access.py -k resolves_dns_with_network_enabled
+============================= test session starts ==============================
+platform darwin -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot
+configfile: pyproject.toml
+plugins: cov-7.1.0, asyncio-1.4.0, anyio-4.15.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 20 items / 18 deselected / 2 selected
+
+tests/test_local_sandbox_access.py FF                                    [100%]
+
+=================================== FAILURES ===================================
+_______ test_local_sandbox_resolves_dns_with_network_enabled[workspace] ________
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x11b8ce390>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-4...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+>               result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+
+astrbot/core/computer/process_sandbox/unix.py:141: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:550: in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2141: in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: -9 args: ['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/pri...>
+timeout = 19.99994654202601
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -> initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining <= 0:
+>                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn0', '-D', 'EXECUTABLE_0=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-D', 'PYTHON_PREFIX=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv', '-D', 'PYTHON_BASE_PREFIX=/Library/Frameworks/Python.framework/Versions/3.12', '-p', '\n(version 1)\n(deny default)\n(deny mach-priv-host-port)\n(import "system.sb")\n\n(allow process-fork)\n(allow process-exec)\n(allow process-info* (target self))\n(deny process-exec\n    (literal "/usr/bin/open")\n    (literal "/usr/bin/osascript"))\n(deny appleevent-send)\n(deny mach-lookup\n    (global-name "com.apple.coreservices.launchservicesd")\n    (global-name "com.apple.lsd.mapdb")\n    (global-name "com.apple.lsd.modifydb")\n    (global-name "com.apple.lsd.open")\n    (global-name "com.apple.lsd.xpc"))\n\n(allow file-read-metadata file-test-existence)\n(allow file-read* file-test-existence\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-map-executable\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-write*\n    (subpath (param "WORKSPACE")))\n\n(deny file-read*\n    (literal "/private/etc/master.passwd")\n    (literal "/private/etc/passwd"))\n(allow network*)\n\n(deny file-write* (subpath (param "PYTHON_PREFIX")) (subpath (param "PYTHON_BASE_PREFIX")))\n', '/usr/bin/env', '-i', 'PATH=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin:/usr/bin:/bin', 'HOME=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn0', 'TMPDIR=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn0', 'LANG=C.UTF-8', '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-I', '-S', '-c', '\nimport os\nimport resource\nimport sys\n\nlimits = [\n    (resource.RLIMIT_CPU, 300),\n    (resource.RLIMIT_FSIZE, 104857600),\n    (resource.RLIMIT_NOFILE, 256),\n    (resource.RLIMIT_CORE, 0),\n]\nif sys.platform.startswith("linux"):\n    # macOS RLIMIT_NPROC counts every process owned by the host user, and its\n    # Python process starts above this virtual-address limit.\n    limits.extend(\n        (\n            (resource.RLIMIT_NPROC, 256),\n            (resource.RLIMIT_AS, 1073741824),\n        )\n    )\nfor kind, requested in limits:\n    _, hard = resource.getrlimit(kind)\n    value = requested if hard == resource.RLIM_INFINITY else min(requested, hard)\n    resource.setrlimit(kind, (value, value))\nos.execvpe(sys.argv[1], sys.argv[1:], os.environ)\n', '/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c', "import socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]' timed out after 19.99994654202601 seconds
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2045: TimeoutExpired
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn0')
+filesystem_scope = 'workspace'
+
+    @requires_local_sandbox
+    @pytest.mark.parametrize("filesystem_scope", ["workspace", "host"])
+    def test_local_sandbox_resolves_dns_with_network_enabled(tmp_path, filesystem_scope):
+        """Resolve a public hostname through the operating system's real DNS resolver."""
+>       result = create_process_sandbox().run(
+            [
+                sys.executable,
+                "-c",
+                "import socket; "
+                "assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); "
+                "print('DNS resolution succeeded')",
+            ],
+            SandboxSpec(
+                workspace=tmp_path,
+                allow_network=True,
+                filesystem_scope=filesystem_scope,
+            ),
+            timeout=20,
+        )
+
+tests/test_local_sandbox_access.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x11b8ce390>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-4...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+                result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+            except subprocess.TimeoutExpired as exc:
+>               raise SandboxTimeoutError(
+                    f"Sandbox command timed out after {timeout} seconds."
+                ) from exc
+E               astrbot.core.computer.process_sandbox.base.SandboxTimeoutError: Sandbox command timed out after 20 seconds.
+
+astrbot/core/computer/process_sandbox/unix.py:150: SandboxTimeoutError
+__________ test_local_sandbox_resolves_dns_with_network_enabled[host] __________
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x11b8cd8e0>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-4...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+>               result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+
+astrbot/core/computer/process_sandbox/unix.py:141: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:550: in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2141: in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: -9 args: ['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/pri...>
+timeout = 19.99995233298978
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -> initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining <= 0:
+>                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '['/usr/bin/sandbox-exec', '-D', 'WORKSPACE=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn1', '-D', 'EXECUTABLE_0=/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-D', 'PYTHON_PREFIX=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv', '-D', 'PYTHON_BASE_PREFIX=/Library/Frameworks/Python.framework/Versions/3.12', '-p', '\n(version 1)\n(deny default)\n(deny mach-priv-host-port)\n(import "system.sb")\n\n(allow file-read* file-write* file-test-existence file-read-metadata file-map-executable)\n\n(allow process-fork)\n(allow process-exec)\n(allow process-info* (target self))\n(deny process-exec\n    (literal "/usr/bin/open")\n    (literal "/usr/bin/osascript"))\n(deny appleevent-send)\n(deny mach-lookup\n    (global-name "com.apple.coreservices.launchservicesd")\n    (global-name "com.apple.lsd.mapdb")\n    (global-name "com.apple.lsd.modifydb")\n    (global-name "com.apple.lsd.open")\n    (global-name "com.apple.lsd.xpc"))\n\n(allow file-read-metadata file-test-existence)\n(allow file-read* file-test-existence\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-map-executable\n    (subpath "/bin")\n    (subpath "/usr/bin")\n    (subpath "/usr/libexec")\n    (literal (param "EXECUTABLE_0"))\n    (subpath (param "WORKSPACE"))\n    (subpath (param "PYTHON_PREFIX"))\n    (subpath (param "PYTHON_BASE_PREFIX")))\n(allow file-write*\n    (subpath (param "WORKSPACE")))\n\n(allow network*)\n', '/usr/bin/env', '-i', 'PATH=/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin:/usr/bin:/bin', 'HOME=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn1', 'TMPDIR=/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn1', 'LANG=C.UTF-8', '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12', '-I', '-S', '-c', '\nimport os\nimport resource\nimport sys\n\nlimits = [\n    (resource.RLIMIT_CPU, 300),\n    (resource.RLIMIT_FSIZE, 104857600),\n    (resource.RLIMIT_NOFILE, 256),\n    (resource.RLIMIT_CORE, 0),\n]\nif sys.platform.startswith("linux"):\n    # macOS RLIMIT_NPROC counts every process owned by the host user, and its\n    # Python process starts above this virtual-address limit.\n    limits.extend(\n        (\n            (resource.RLIMIT_NPROC, 256),\n            (resource.RLIMIT_AS, 1073741824),\n        )\n    )\nfor kind, requested in limits:\n    _, hard = resource.getrlimit(kind)\n    value = requested if hard == resource.RLIM_INFINITY else min(requested, hard)\n    resource.setrlimit(kind, (value, value))\nos.execvpe(sys.argv[1], sys.argv[1:], os.environ)\n', '/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c', "import socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]' timed out after 19.99995233298978 seconds
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2045: TimeoutExpired
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-40/test_local_sandbox_resolves_dn1')
+filesystem_scope = 'host'
+
+    @requires_local_sandbox
+    @pytest.mark.parametrize("filesystem_scope", ["workspace", "host"])
+    def test_local_sandbox_resolves_dns_with_network_enabled(tmp_path, filesystem_scope):
+        """Resolve a public hostname through the operating system's real DNS resolver."""
+>       result = create_process_sandbox().run(
+            [
+                sys.executable,
+                "-c",
+                "import socket; "
+                "assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); "
+                "print('DNS resolution succeeded')",
+            ],
+            SandboxSpec(
+                workspace=tmp_path,
+                allow_network=True,
+                filesystem_scope=filesystem_scope,
+            ),
+            timeout=20,
+        )
+
+tests/test_local_sandbox_access.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <astrbot.core.computer.process_sandbox.seatbelt.SeatbeltProcessSandbox object at 0x11b8cd8e0>
+argv = ['/Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/bin/python', '-c'...ort socket; assert socket.getaddrinfo('example.com', 443, type=socket.SOCK_STREAM); print('DNS resolution succeeded')"]
+spec = SandboxSpec(workspace=PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-4...le_size_bytes=104857600, memory_bytes=1073741824, open_files=256, processes=256), readable_roots=(), writable_roots=())
+env = None, timeout = 20, output_limit = None, discard_stdout = False
+
+    def run(
+        self,
+        argv: list[str],
+        spec: SandboxSpec,
+        *,
+        env: dict[str, str] | None = None,
+        timeout: float | None = None,
+        output_limit: int | None = None,
+        discard_stdout: bool = False,
+    ) -> SandboxRunResult:
+        """Run a command through the Unix sandbox wrapper.
+    
+        Args:
+            argv: Command and arguments to execute inside the sandbox.
+            spec: Filesystem, network, and resource policy.
+            env: Additional environment variables exposed inside the sandbox.
+            timeout: Maximum wall-clock runtime in seconds.
+            output_limit: Maximum captured bytes for each output stream.
+            discard_stdout: Whether to discard standard output.
+    
+        Returns:
+            Captured process result.
+    
+        Raises:
+            SandboxTimeoutError: If the process exceeds ``timeout``.
+            ValueError: If ``output_limit`` is not positive.
+        """
+        if output_limit is not None and output_limit <= 0:
+            raise ValueError("Sandbox output limit must be greater than 0.")
+    
+        with (
+            tempfile.TemporaryFile() as stdout_file,
+            tempfile.TemporaryFile() as stderr_file,
+        ):
+            try:
+                result = subprocess.run(
+                    self.build_command(argv, spec, env=env),
+                    cwd=spec.workspace.resolve(),
+                    env={"PATH": os.defpath},
+                    timeout=timeout,
+                    stdout=subprocess.DEVNULL if discard_stdout else stdout_file,
+                    stderr=stderr_file,
+                )
+            except subprocess.TimeoutExpired as exc:
+>               raise SandboxTimeoutError(
+                    f"Sandbox command timed out after {timeout} seconds."
+                ) from exc
+E               astrbot.core.computer.process_sandbox.base.SandboxTimeoutError: Sandbox command timed out after 20 seconds.
+
+astrbot/core/computer/process_sandbox/unix.py:150: SandboxTimeoutError
+=============================== warnings summary ===============================
+astrbot/core/utils/tencent_record_helper.py:4
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/astrbot/core/utils/tencent_record_helper.py:4: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    import audioop
+
+.venv/lib/python3.12/site-packages/jieba/__init__.py:44
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/lib/python3.12/site-packages/jieba/__init__.py:44: SyntaxWarning: invalid escape sequence '\.'
+    re_han_default = re.compile("([\u4E00-\u9FD5a-zA-Z0-9+#&\._%\-]+)", re.U)
+
+.venv/lib/python3.12/site-packages/jieba/__init__.py:46
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/lib/python3.12/site-packages/jieba/__init__.py:46: SyntaxWarning: invalid escape sequence '\s'
+    re_skip_default = re.compile("(\r\n|\s)", re.U)
+
+.venv/lib/python3.12/site-packages/jieba/finalseg/__init__.py:78
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/.venv/lib/python3.12/site-packages/jieba/finalseg/__init__.py:78: SyntaxWarning: invalid escape sequence '\.'
+    re_skip = re.compile("([a-zA-Z0-9]+(?:\.\d+)?%?)")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_local_sandbox_access.py::test_local_sandbox_resolves_dns_with_network_enabled[workspace]
+FAILED tests/test_local_sandbox_access.py::test_local_sandbox_resolves_dns_with_network_enabled[host]
+================ 2 failed, 18 deselected, 4 warnings in 51.62s =================

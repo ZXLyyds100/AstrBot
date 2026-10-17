@@ -1,0 +1,365 @@
+[ci] syncing dependencies with uv
+Resolved 168 packages in 5ms
+Checked 162 packages in 71ms
+[ci] running tests: tests/unit/test_star_base.py -k local_url_requires_valid_callback_base or local_fallback_returns_reusable_url
+============================= test session starts ==============================
+platform darwin -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388
+configfile: pyproject.toml
+plugins: cov-7.1.0, asyncio-1.4.0, anyio-4.15.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 46 items / 23 deselected / 23 selected
+
+tests/unit/test_star_base.py ............FFFFFF.....                     [100%]
+
+=================================== FAILURES ===================================
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example?] _
+
+self = <test_star_base.TestStarBase object at 0x102599070>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r8')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x11735db50>
+callback_base = 'https://files.example?'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.084][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example#] _
+
+self = <test_star_base.TestStarBase object at 0x102599040>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r9')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x117373080>
+callback_base = 'https://files.example#'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.218][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example?#] _
+
+self = <test_star_base.TestStarBase object at 0x102599010>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r10')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1175cb6b0>
+callback_base = 'https://files.example?#'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.221][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/?] _
+
+self = <test_star_base.TestStarBase object at 0x102599580>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r11')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1175d02f0>
+callback_base = 'https://files.example/proxy/?'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.225][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/#] _
+
+self = <test_star_base.TestStarBase object at 0x1025992b0>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r12')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x117574e60>
+callback_base = 'https://files.example/proxy/#'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.228][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+_ TestStarBase.test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/?#] _
+
+self = <test_star_base.TestStarBase object at 0x1025b4f20>
+tmp_path = PosixPath('/private/var/folders/cz/8yvmqbzn1yn47m7jwjm4t9wr0000gn/T/pytest-of-anastasio/pytest-37/test_text_to_image_local_url_r13')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1175a15e0>
+callback_base = 'https://files.example/proxy/?#'
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize(
+        "callback_base",
+        [
+            None,
+            "",
+            "files.example",
+            "file:///tmp",
+            "https://",
+            "https://[invalid",
+            "https://files.example?key=private",
+            "https://files.example/#fragment",
+            "https://files.example?",
+            "https://files.example#",
+            "https://files.example?#",
+            "https://files.example/proxy/?",
+            "https://files.example/proxy/#",
+            "https://files.example/proxy/?#",
+            "https://files.example:bad",
+            "https://files.example:0",
+            "https://files.example:65536",
+            "https://files. example",
+            42,
+        ],
+    )
+    async def test_text_to_image_local_url_requires_valid_callback_base(
+        self, tmp_path, monkeypatch, callback_base
+    ):
+        """Explain a missing or invalid public base instead of returning a path."""
+        import astrbot.core.star.base as star_base
+        from astrbot.core.file_token_service import FileTokenService
+    
+        service = FileTokenService()
+        monkeypatch.setattr(star_base, "file_token_service", service, raising=False)
+        image_file = tmp_path / "rendered.jpg"
+        image_file.write_bytes(b"fixture image bytes")
+        context = MagicMock()
+        context.get_config.return_value = {"callback_api_base": callback_base}
+        context.html_renderer.render_t2i = AsyncMock(return_value=str(image_file))
+>       with pytest.raises(
+            RuntimeError, match="callback_api_base.*return_url=False"
+        ) as exc_info:
+E       Failed: DID NOT RAISE RuntimeError
+
+tests/unit/test_star_base.py:230: Failed
+----------------------------- Captured stdout call -----------------------------
+[32m[10:20:38.232][0m [Core] [1m[INFO][0m [star.base:46]: [1mPlugin Star log level: INFO.[0m
+------------------------------ Captured log call -------------------------------
+INFO     astrbot:base.py:46 Plugin Star log level: INFO.
+=============================== warnings summary ===============================
+tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_fallback_returns_reusable_url[https://files.example]
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot-10388/astrbot/core/utils/tencent_record_helper.py:4: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    import audioop
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example?]
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example#]
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example?#]
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/?]
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/#]
+FAILED tests/unit/test_star_base.py::TestStarBase::test_text_to_image_local_url_requires_valid_callback_base[https://files.example/proxy/?#]
+============ 6 failed, 17 passed, 23 deselected, 1 warning in 2.49s ============

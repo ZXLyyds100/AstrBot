@@ -5,7 +5,7 @@
   "results": {
     "url_requested_with_callback": {
       "actual_kind": "filesystem_path",
-      "value": "io_temp_img_1792201314_3f30a356.jpg",
+      "value": "io_temp_img_1792204264_89aad7d6.jpg",
       "filesystem_path_redacted": true
     },
     "file_route": {
@@ -13,9 +13,41 @@
     },
     "url_requested_without_callback": {
       "actual_kind": "filesystem_path",
-      "value": "io_temp_img_1792201314_dce3c289.jpg",
+      "value": "io_temp_img_1792204264_5e5405ed.jpg",
       "filesystem_path_redacted": true
     },
+    "invalid_callback_delimiters": [
+      {
+        "synthetic_base": "http://fixture.test?",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      },
+      {
+        "synthetic_base": "http://fixture.test#",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      },
+      {
+        "synthetic_base": "http://fixture.test?#",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      },
+      {
+        "synthetic_base": "http://fixture.test/proxy/?",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      },
+      {
+        "synthetic_base": "http://fixture.test/proxy/#",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      },
+      {
+        "synthetic_base": "http://fixture.test/proxy/?#",
+        "actual_kind": "filesystem_path",
+        "extra_tokens": 0
+      }
+    ],
     "path_requested": {
       "actual_kind": "filesystem_path",
       "exists": true,
@@ -47,6 +79,30 @@
       "success": false
     },
     {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
+      "json": true,
+      "success": false
+    },
+    {
       "json": false,
       "success": false
     },
@@ -69,6 +125,7 @@
   "checks": {
     "local_url_request_returns_url": false,
     "local_url_without_base_fails_clearly": false,
+    "empty_query_or_fragment_rejected_without_tokens": false,
     "explicit_path_still_works": true,
     "lower_level_path_semantics_unchanged": true,
     "remote_url_success_unchanged": true,

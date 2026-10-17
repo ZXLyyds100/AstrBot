@@ -1,0 +1,21 @@
+[ci] syncing dependencies with uv
+Resolved 168 packages in 3ms
+Checked 162 packages in 49ms
+[ci] running tests: tests/test_local_sandbox_access.py -k resolves_dns_with_network_enabled
+============================= test session starts ==============================
+platform darwin -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0
+rootdir: /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot
+configfile: pyproject.toml
+plugins: cov-7.1.0, asyncio-1.4.0, anyio-4.15.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 20 items / 18 deselected / 2 selected
+
+tests/test_local_sandbox_access.py ..                                    [100%]
+
+=============================== warnings summary ===============================
+astrbot/core/utils/tencent_record_helper.py:4
+  /Users/anastasio/Documents/Codex/2026-10-16/github-agent-ai-star-pr-close/work/repos/astrbot/astrbot/core/utils/tencent_record_helper.py:4: DeprecationWarning: 'audioop' is deprecated and slated for removal in Python 3.13
+    import audioop
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 2 passed, 18 deselected, 1 warning in 2.18s ==================
