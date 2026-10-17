@@ -1,0 +1,5 @@
+name: preview_fixture
+display_name: Image preview acceptance fixture
+desc: Synthetic uploaded images; no model or messaging service is configured.
+version: v1.0.0
+author: Local acceptance fixture

@@ -1,0 +1,15 @@
+{
+  "images": {
+    "type": "file",
+    "description": "Acceptance fixture images",
+    "hint": "Synthetic files for before/after verification. No user data.",
+    "default": [],
+    "file_types": ["png", "jpg", "jpeg", "gif", "webp", "txt"]
+  },
+  "other_images": {
+    "type": "file",
+    "description": "Another field",
+    "default": [],
+    "file_types": ["png"]
+  }
+}
