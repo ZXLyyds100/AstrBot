@@ -1,0 +1,369 @@
+{
+  "capturedAt": "2026-10-18T10:46:33.962Z",
+  "head": "ae728172062566bd251be143a40d9ecd79ffbdb5",
+  "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+  "synchronizedMaster": "8774e53ff46195b9c7031165553b786fa847e612",
+  "files": [
+    {
+      "filename": "after-files.png",
+      "size": 108522,
+      "sha256": "9322b1d64c196417b4f479eafccaa5e97561173fa78ad58ea49e48d73bbbdfd2"
+    },
+    {
+      "filename": "after-large.png",
+      "size": 69027,
+      "sha256": "b64e33ea2b4e9f370fc5c799f54de74a682e1141555d4fc3ea8dfd28dc6f58d0"
+    },
+    {
+      "filename": "after-mobile.png",
+      "size": 38516,
+      "sha256": "5e8f361f998520ca0bc6cce733c4e1d36f0727ddd1e4fc34bd267170d425b93e"
+    },
+    {
+      "filename": "review-after-aliases.png",
+      "size": 112542,
+      "sha256": "8b3866a0c4ccc1ae13948598d3c0f582450e2796833ea36fe671d855b5c6b7c4"
+    },
+    {
+      "filename": "preview-verified.webm",
+      "size": 748946,
+      "sha256": "e6a6b26aa95fa6379c88e4543f363b7a42b9c8b8e8dc9b1aaa7fd5adf323fe3f"
+    }
+  ],
+  "checks": [
+    {
+      "label": "dashboard-focused-verified",
+      "startedAt": "2026-10-18T10:22:14.126Z",
+      "finishedAt": "2026-10-18T10:23:33.134Z",
+      "seconds": 79.006,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "lifecycle-focused",
+      "startedAt": "2026-10-18T10:35:18.509Z",
+      "finishedAt": "2026-10-18T10:35:21.225Z",
+      "seconds": 2.716,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "full-python-verified",
+      "startedAt": "2026-10-18T10:36:20.227Z",
+      "finishedAt": "2026-10-18T10:38:37.591Z",
+      "seconds": 137.363,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "dashboard-node",
+      "startedAt": "2026-10-18T10:18:53.485Z",
+      "finishedAt": "2026-10-18T10:18:55.202Z",
+      "seconds": 1.717,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "ruff-format-check",
+      "startedAt": "2026-10-18T10:22:35.863Z",
+      "finishedAt": "2026-10-18T10:22:36.453Z",
+      "seconds": 0.589,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "ruff-check",
+      "startedAt": "2026-10-18T10:22:36.567Z",
+      "finishedAt": "2026-10-18T10:22:36.830Z",
+      "seconds": 0.262,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "i18n",
+      "startedAt": "2026-10-18T10:22:35.861Z",
+      "finishedAt": "2026-10-18T10:22:36.684Z",
+      "seconds": 0.822,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "typecheck",
+      "startedAt": "2026-10-18T10:22:36.763Z",
+      "finishedAt": "2026-10-18T10:22:55.534Z",
+      "seconds": 18.77,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "dashboard-build",
+      "startedAt": "2026-10-18T10:22:14.129Z",
+      "finishedAt": "2026-10-18T10:22:52.973Z",
+      "seconds": 38.843,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "docs-build",
+      "startedAt": "2026-10-18T10:22:14.127Z",
+      "finishedAt": "2026-10-18T10:22:23.275Z",
+      "seconds": 9.148,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "api-generation-repeat",
+      "startedAt": "2026-10-18T10:24:57.647Z",
+      "finishedAt": "2026-10-18T10:24:58.546Z",
+      "seconds": 0.898,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "precommit-verified",
+      "startedAt": "2026-10-18T10:28:39.596Z",
+      "finishedAt": "2026-10-18T10:28:40.414Z",
+      "seconds": 0.818,
+      "exit": 0,
+      "tree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "restart-fixture-hooks",
+      "startedAt": "2026-10-18T10:35:17.055Z",
+      "finishedAt": "2026-10-18T10:35:17.771Z",
+      "seconds": 0.715,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "ruff-format-final",
+      "startedAt": "2026-10-18T10:36:20.227Z",
+      "finishedAt": "2026-10-18T10:36:20.797Z",
+      "seconds": 0.569,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "ruff-check-final",
+      "startedAt": "2026-10-18T10:36:20.887Z",
+      "finishedAt": "2026-10-18T10:36:21.074Z",
+      "seconds": 0.187,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "commit-master-sync",
+      "startedAt": "2026-10-18T10:39:49.810Z",
+      "finishedAt": "2026-10-18T10:39:50.854Z",
+      "seconds": 1.044,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    },
+    {
+      "label": "push-master-sync",
+      "startedAt": "2026-10-18T10:41:02.529Z",
+      "finishedAt": "2026-10-18T10:41:06.388Z",
+      "seconds": 3.858,
+      "exit": 0,
+      "tree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+      "versions": {
+        "node": "v24.13.0",
+        "pnpm": "10.28.2"
+      }
+    }
+  ],
+  "fullPython": {
+    "passed": 4702,
+    "skipped": 11,
+    "windowsOnly": 7,
+    "linuxOnly": 3,
+    "optionalEdgeTtsImport": 1
+  },
+  "dashboardNode": {
+    "passed": 78,
+    "failed": 0
+  },
+  "lifecycle": {
+    "passed": 26,
+    "baselineRestartDeadlineSeconds": 30,
+    "baselineRestartDeadlineExceeded": true,
+    "productionCodeChanged": false
+  },
+  "browser": {
+    "passed": 31,
+    "created": 29,
+    "revoked": 29,
+    "active": 0,
+    "checks": [
+      "Three valid images have thumbnails",
+      "Corrupt image has a non-blocking fallback",
+      "Missing file remains marked",
+      "Non-image file remains manageable",
+      "Thumbnails use object URLs, not credential-bearing image URLs",
+      "Larger preview decodes the bounded image",
+      "Escape closes only the larger preview",
+      "Keyboard activation opens an aspect-preserving portrait preview",
+      "Closing file management revokes every image object URL",
+      "Another configuration field does not show the first field images",
+      "Overwriting the same filename refreshes its thumbnail without reopening",
+      "Restoring the same filename refreshes again",
+      "Unconfigured uploaded image also has a preview",
+      "Adding an existing image to config still works",
+      "Deleting a previewed image reaches the real delete API",
+      "Deleted image is removed from the list",
+      "Mobile larger preview stays within the viewport",
+      "Repeated open/close cycles do not accumulate object URLs",
+      "Closing during delayed real preview requests aborts them",
+      "Late responses do not create stale image object URLs",
+      "No preview request URL contains a login token",
+      "Unexpected server failure is logged",
+      "Expected 415 failures remain quiet",
+      "Unexpected network failure is logged",
+      "Unexpected mime failure is logged",
+      "Warnings exclude request headers and credentials",
+      "sample.jfif has a decoded thumbnail from the real preview endpoint",
+      "sample.jpe has a decoded thumbnail from the real preview endpoint",
+      "sample.dib has a decoded thumbnail from the real preview endpoint",
+      "sample.apng has a decoded thumbnail from the real preview endpoint",
+      "Alias and failure checks leave no live object URLs"
+    ]
+  },
+  "media": {
+    "at": "2026-10-18T10:41:37.030Z",
+    "sourceHead": "ae728172062566bd251be143a40d9ecd79ffbdb5",
+    "sourceTree": "421e401bc16e639e5a73851ae60f33282ed11e51",
+    "productionBuildTree": "918b0edb3389617eb44cdb89e514a446bc81eeda",
+    "sourceDifference": "Only tests/unit/test_core_lifecycle.py changed after the production build and the 31 browser assertions; all backend/dashboard source blobs match.",
+    "screenshots": [
+      "after-files.png",
+      "after-large.png",
+      "after-mobile.png",
+      "review-after-aliases.png"
+    ],
+    "video": "preview-verified.webm",
+    "videoMetadata": {
+      "width": 800,
+      "height": 600,
+      "duration": 10.6
+    },
+    "fixture": "Fresh isolated synthetic plugin and images; actual endpoint and UI; no live model or IM calls.",
+    "videoPlaybackFrames": [
+      {
+        "name": "desktop",
+        "width": 800,
+        "height": 600,
+        "duration": 10.6,
+        "currentTime": 3.019016,
+        "readyState": 4
+      },
+      {
+        "name": "mobile",
+        "width": 800,
+        "height": 600,
+        "duration": 10.6,
+        "currentTime": 8.418246,
+        "readyState": 4
+      }
+    ],
+    "videoPlaybackVerifiedAt": "2026-10-18T10:44:05.250Z"
+  },
+  "review": {
+    "files": [
+      "astrbot/dashboard/api/plugins.py",
+      "astrbot/dashboard/services/config_service.py",
+      "dashboard/src/api/generated/openapi-v1/sdk.gen.ts",
+      "dashboard/src/api/generated/openapi-v1/types.gen.ts",
+      "dashboard/src/api/v1.ts",
+      "dashboard/src/components/shared/ConfigImagePreview.vue",
+      "dashboard/src/components/shared/FileConfigItem.vue",
+      "dashboard/src/i18n/locales/en-US/features/config.json",
+      "dashboard/src/i18n/locales/ja-JP/features/config.json",
+      "dashboard/src/i18n/locales/ru-RU/features/config.json",
+      "dashboard/src/i18n/locales/zh-CN/features/config.json",
+      "docs/en/dev/openapi-scopes.md",
+      "docs/en/dev/star/guides/plugin-config.md",
+      "docs/en/use/webui.md",
+      "docs/public/openapi.json",
+      "docs/zh/dev/openapi-scopes.md",
+      "docs/zh/dev/star/guides/plugin-config.md",
+      "docs/zh/use/webui.md",
+      "openspec/openapi-v1.yaml",
+      "tests/test_fastapi_v1_dashboard.py",
+      "tests/unit/test_core_lifecycle.py"
+    ],
+    "endpointCount": 324,
+    "checks": [
+      "The original 20 feature files plus one narrowly scoped restart-test fixture adjustment; no reports, media, credentials, workflow edits or dependency additions.",
+      "All untouched feature files are byte-identical to the previous reviewed head.",
+      "Generated SDK contains the union of both endpoint export sets and type imports.",
+      "Preview endpoint and new trace endpoints coexist; no unresolved merge markers.",
+      "Conflict resolution is generated from the merged OpenAPI document, not hand-edited."
+    ]
+  },
+  "hostedCIPassed": false,
+  "humanApproved": false
+}
